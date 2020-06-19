@@ -14,6 +14,16 @@ function App() {
     );
 }
 
+function MyApp(){
+    return(
+        <div>
+            <h1>My First React App</h1>
+            <Loop />
+
+        </div>
+    )
+}
+
 function NewsArticle() {
     return (
         <article>
@@ -22,4 +32,13 @@ function NewsArticle() {
     )
 }
 
-export { App };
+function Loop(){
+    let div = [];
+    for(let i=1; i<=200;i++){
+        div.push(<NewsArticle key={i}/>)
+    }
+    return div;
+    
+}
+
+export { App, MyApp };

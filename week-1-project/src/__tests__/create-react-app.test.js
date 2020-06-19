@@ -1,6 +1,7 @@
 import React from 'react';
 import {Import, optionalChaining} from '../create-react-app';
 import '../create-react-app.css';
+import * as AllObjects from '../create-react-app';
 
 // The goal of these tests is to familiarize you with create-react-app
 // To understand the folder structure, the transpiling, dependency management, ... inside create-react-app
@@ -12,6 +13,7 @@ import '../create-react-app.css';
 test('Getting started', () => {
   // Get this test to run by installing dependencies with yarn
   // Install yarn https://yarnpkg.com/en/docs/install#mac-stable
+  // or for Ubuntu https://classic.yarnpkg.com/en/docs/install#debian-stable
   // run `yarn install`
   // run `yarn run test`
   expect(React).toEqual(React);
@@ -27,7 +29,7 @@ test('Writing tests', () => {
   };
 
   // Fix this assert statement and validate that the test is running
-  expect(multiply(2,3)).toEqual(false);
+  expect(multiply(2,3)).toEqual(6);
 });
 
 test('Exports & Imports: exporting objects', () => {
